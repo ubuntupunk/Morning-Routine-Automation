@@ -60,7 +60,7 @@ do
 	# log window switch if appropriate
 	if [ "$perform_write" = true ]; then 
 		# number of seconds elapsed since Jan 1, 1970 0:00 UTC
-		logfile="/home/lucassoares/Desktop/projects/self_track/logs/windows.txt"
+		logfile="/home/davdev/Projects/self_track/logs/windows.txt"
 		echo "$T $curtitle" >> $logfile
 		echo "logged window title: $(date) $curtitle into $logfile"
 		last_write=$T
