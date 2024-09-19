@@ -59,7 +59,7 @@ continueDay()
 
 # mail
 # teams, mail, slack, whatsapp
-sendNotificationOnLinux("Open Mail, Teams, Slack")
+sendNotificationOnLinux("Open Mail, Slack")
 #os.system("teams")
 #os.system("mailspring")
 os.system("slack")
