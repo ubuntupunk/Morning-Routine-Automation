@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import webbrowser
 import time
 import os
@@ -14,15 +16,16 @@ def sendNotificationOnWindows(msg="", delay=2):
     t = 0
     notify = ToastNotifier()
     while t < delay:
-        notify.show_toast("Notification",msg)
+        notify.show_toast("Notification", msg)
         time.sleep(1)
-        t+=1
+        t += 1
+
 
 def continueDay():
     cont = input("Press too continue")
 
 
-os.system("bash logSystemOnOff.sh") 
+os.system("bash logSystemOnOff.sh")
 
 print("Run keyfrequency and active window loggers with sudo")
 
@@ -38,10 +41,10 @@ print("Check your calendar")
 webbrowser.open("https://calendar.google.com/calendar/u/0/r/day")
 
 
-# notion 
-#webbrowser.open_new_tab("www.notion.so")
-#print("Write your todo list on the Notion table with the routine and the specifics")
-#continueDay()
+# notion
+# webbrowser.open_new_tab("www.notion.so")
+# print("Write your todo list on the Notion table with the routine and the specifics")
+# continueDay()
 
 # start codium for coding
 print("TYPE")
@@ -53,26 +56,24 @@ print("FRENCH")
 webbrowser.open("www.duolingo.com")
 continueDay()
 
-#print("CODE")
-#webbrowser.open("https://projecteuler.net/archives")
+# print("CODE")
+# webbrowser.open("https://projecteuler.net/archives")
 # start Anki
 
 # mail
 # teams, mail, slack, whatsapp
 sendNotificationOnLinux("Open Mail, Slack")
-#os.system("teams")
-#os.system("mailspring")
+# os.system("teams")
+# os.system("mailspring")
 os.system("slack")
-#webbrowser.open("https://web.whatsapp.com/")
+# webbrowser.open("https://web.whatsapp.com/")
 
 # medium
-#webbrowser.open("https://medium.com/me/partner/dashboard")
-#print("Check your stats on Medium")
+# webbrowser.open("https://medium.com/me/partner/dashboard")
+# print("Check your stats on Medium")
 #
 continueDay()
 
 print("Leave an Ipython window open!")
 
 print("Be grateful, no negative thoughts and have a great day!")
-
-
